@@ -29,13 +29,13 @@ let count = 0;
 
 const input = document.querySelector("input");
 const log = document.getElementById("navnværdi");
-const charCount = document.getElementById("optællingen"); // Tilføjet
+const charCount = document.getElementById("optællingen");
 
 input.addEventListener("input", updateValue);
 
 function updateValue(e) {
   log.textContent = e.target.value;
-  charCount.textContent = `Tegn: ${e.target.value.length}`; // Opdaterer optælling
+  charCount.textContent = `Tegn: ${e.target.value.length}`;
 }
 const str = "Hello, world!";
 
